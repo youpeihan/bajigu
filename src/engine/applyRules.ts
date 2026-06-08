@@ -87,10 +87,18 @@ function setupRedirect(rule: PlatformRule) {
   // Initial check (a direct load that slipped past the DNR rule).
   checkUrlAndRedirect();
 
+  // Reliability net: Facebook (and some other SPAs) change the URL to the next
+  // /reel/<id> as you scroll, without firing a history event the isolated
+  // content script can observe. A lightweight poll catches every case — SPA
+  // nav, scroll-driven URL swaps, and full loads alike. Cost is one regex test
+  // per tick, which is negligible.
+  const pollId = setInterval(checkUrlAndRedirect, 500);
+
   activeTeardowns.set(rule.id, () => {
     window.removeEventListener('yt-navigate-finish', checkUrlAndRedirect);
     window.removeEventListener('popstate', checkUrlAndRedirect);
     window.removeEventListener('bajigu:locationchange', checkUrlAndRedirect);
+    clearInterval(pollId);
   });
 }
 
