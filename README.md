@@ -32,13 +32,28 @@ peek-a-boo, or whatever your version of it is.
 
 Your attention is the most valuable thing you own. Spend it on what matters.
 
-## What it does
+## Why Bajigu is different
 
-- **Hides Shorts & Reels** across YouTube and Facebook — home feed, search, sidebar, watch-page carousels — with zero flash on load.
-- **Redirects Shorts to the normal player.** Open a `/shorts/` link anywhere and you land on `/watch` instead.
-- **An honest focus dashboard** on your new tab (optional): a streak, how many Shorts you've kept out of your feed, and how many you actually resisted opening.
-- **100% local.** No accounts, no tracking, no servers. Your stats never leave your device.
-- **No ads. No search hijacking.** Ever.
+Most blockers just hide Shorts and call it a day. Bajigu is built around one idea:
+**give the minutes back without making you fight the page.**
+
+- **You keep the video — you just lose the trap.** Open a Short and Bajigu sends you
+  to the *normal* player. Same content, none of the swipe-forever format. Other
+  blockers delete it; Bajigu lets you actually watch what you meant to.
+- **Zero flicker — it hides before the page paints.** Bajigu injects its rules at
+  `document_start`, so you never see Shorts flash in and disappear. Most extensions
+  hide *after* load — you get baited for a split second on every visit.
+- **It works even inside the app.** Tap a Short from search, a channel, or an in-app
+  swipe and Bajigu still catches it. Naive blockers only handle full page loads and
+  miss in-app navigation entirely.
+- **Honest numbers, not vanity metrics.** Two separate stats: Shorts *removed from
+  your feed*, and Shorts you actually *opened and resisted*. No inflated
+  "you saved 40 hours" fiction the day you install it.
+- **No ads, no tracking, no servers, no VC.** 100% local, funded only by the people
+  it helps. It's a dad's side project, not an ad-tech funnel.
+
+**Supported today:** YouTube Shorts, Facebook Reels. More sites are added through
+community-maintained [rules](src/rules) — no engine changes required.
 
 ## Install
 
@@ -80,9 +95,11 @@ The fastest path: if something stopped being hidden, click **Report Broken Rule*
 
 ## Support
 
-Bajigu is free, open-source, and will never show ads or sell your data. If it
-gave you back some time, you can [sponsor the project](https://github.com/sponsors/youpeihan)
-— it keeps the rules maintained and the lights on. ☕
+Bajigu has no ads, no tracking, no data to sell, and no investors — donations are
+the *only* thing that keep the rules maintained as YouTube and Facebook keep changing.
+If Bajigu gave you back even one evening, please consider **[supporting it with crypto](DONATE.md)**.
+You're not tipping a company — you're backing one parent building a tool that gives
+time back instead of stealing it. 🤫
 
 ## License
 

@@ -1,5 +1,2 @@
-# Enables the "Sponsor" button on the repo.
-# 1. Enable GitHub Sponsors for your account, then this line lights up.
-github: [youpeihan]
-# 2. Create a Buy Me a Coffee page and put your slug here (then uncomment).
-# custom: ["https://www.buymeacoffee.com/youpeihan"]
+# Crypto-only. The "Sponsor" button links to the donate page with wallet addresses.
+custom: ["https://github.com/youpeihan/bajigu/blob/main/DONATE.md"]

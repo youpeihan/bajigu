@@ -107,6 +107,16 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Support — shown at the emotional peak, never nagging */}
+      <a
+        href="https://github.com/youpeihan/bajigu/blob/main/DONATE.md"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 text-sm text-zinc-600 hover:text-brand transition-colors font-semibold"
+      >
+        🤫 Support Bajigu
+      </a>
     </div>
   );
 }
