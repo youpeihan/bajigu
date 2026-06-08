@@ -32,10 +32,28 @@ itself. Send anything, on whatever chain is cheapest for you:
 
 | Asset | Network | Address |
 |------|---------|---------|
-| **ETH / USDC / USDT** | Ethereum / Arbitrum / Base / Optimism (EVM) | `PASTE_YOUR_EVM_ADDRESS` |
-| **BTC** | Bitcoin | `PASTE_YOUR_BTC_ADDRESS` |
-| **SOL / USDC** | Solana | `PASTE_YOUR_SOL_ADDRESS` |
+| **ETH · USDC · USDT · BTCB** | Any EVM chain — Ethereum (ERC-20) & BNB Smart Chain (BEP-20) | `0xf9cedb64df91b1a48aead6a412ad470a6bb09f0e` |
+| **BTC** | Bitcoin (native) | `15LHVRoDPTGFCMKCsqquf6nAShAhMQ4t5c` |
 
-<!-- Optional: add an ENS name, a QR image, or more chains here. -->
+> The EVM address is the same on Ethereum and BNB Smart Chain — send any EVM token
+> (ETH, ERC-20/BEP-20 USDC/USDT, or BTCB) to it. For **native BTC**, use the Bitcoin
+> address. Please double-check the network before sending.
+
+### Scan to send
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/qr/evm.png" width="180" alt="EVM address QR" /><br/>
+      <b>EVM</b> (ETH · USDC · USDT · BTCB)<br/>
+      <sub><code>0xf9cedb64df91b1a48aead6a412ad470a6bb09f0e</code></sub>
+    </td>
+    <td align="center">
+      <img src="assets/qr/btc.png" width="180" alt="BTC address QR" /><br/>
+      <b>BTC</b> (Bitcoin native)<br/>
+      <sub><code>15LHVRoDPTGFCMKCsqquf6nAShAhMQ4t5c</code></sub>
+    </td>
+  </tr>
+</table>
 
 Thank you for keeping the feed quiet. 🤫
