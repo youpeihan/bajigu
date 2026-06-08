@@ -1,0 +1,39 @@
+name: "🔧 Broken rule (Shorts/Reels leaking through)"
+description: Something that should be hidden or redirected isn't working.
+title: "Broken rule: "
+labels: ["broken-rule"]
+body:
+  - type: dropdown
+    id: site
+    attributes:
+      label: Site
+      options:
+        - YouTube
+        - Facebook
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: "https://www.youtube.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What leaked through?
+      description: What was shown that should have been hidden or redirected? A screenshot helps a lot.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Bajigu version
+      placeholder: "0.1.0"
+  - type: textarea
+    id: selector
+    attributes:
+      label: Suggested selector (optional)
+      description: If you inspected the element, paste the tag/attribute you think should be hidden.

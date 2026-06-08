@@ -1,0 +1,36 @@
+name: Publish to Chrome Web Store
+
+# One-click publish. Run manually from the Actions tab once the four repo
+# secrets below are set. Uses WXT's built-in `wxt submit`.
+#
+# Required repository secrets (Settings -> Secrets and variables -> Actions):
+#   CWS_EXTENSION_ID     - the extension ID from the Web Store dashboard
+#   CWS_CLIENT_ID        - Google OAuth client id
+#   CWS_CLIENT_SECRET    - Google OAuth client secret
+#   CWS_REFRESH_TOKEN    - OAuth refresh token for the publish API
+#
+# See https://wxt.dev/guide/essentials/publishing.html for how to obtain these.
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm zip
+      - name: Submit to Chrome Web Store
+        run: |
+          pnpm wxt submit \
+            --chrome-zip .output/*-chrome.zip
+        env:
+          CHROME_EXTENSION_ID: ${{ secrets.CWS_EXTENSION_ID }}
+          CHROME_CLIENT_ID: ${{ secrets.CWS_CLIENT_ID }}
+          CHROME_CLIENT_SECRET: ${{ secrets.CWS_CLIENT_SECRET }}
+          CHROME_REFRESH_TOKEN: ${{ secrets.CWS_REFRESH_TOKEN }}

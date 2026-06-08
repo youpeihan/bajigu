@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #8B5CF6; /* Violet 500 */
+  --color-brand-light: #A78BFA; /* Violet 400 */
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}

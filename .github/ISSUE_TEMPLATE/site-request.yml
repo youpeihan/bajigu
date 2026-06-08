@@ -1,0 +1,17 @@
+name: "🌐 New site / feature request"
+description: Ask for support for another site or a new feature.
+title: "Request: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: Which site (e.g. TikTok web, Instagram Reels) or feature, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Links, examples, or selectors that might help.
