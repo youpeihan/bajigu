@@ -40,9 +40,7 @@ export default function App() {
     <div className="p-5 flex flex-col space-y-6">
       <div className="flex items-center justify-between pb-4 border-b border-zinc-800">
         <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-brand rounded-md flex items-center justify-center shadow-lg shadow-brand/20">
-            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          </div>
+          <img src="/icon/128.png" alt="Bajigu" className="w-6 h-6 rounded-md shadow-lg shadow-brand/20" />
           <span className="font-extrabold text-xl text-white tracking-tight">Bajigu</span>
         </div>
         

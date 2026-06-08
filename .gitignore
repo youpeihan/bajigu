@@ -32,3 +32,6 @@ youtube_home.png
 *.njsproj
 *.sln
 *.sw?
+
+# Generated store screenshots
+store-assets/
