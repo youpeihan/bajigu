@@ -16,11 +16,21 @@
 
 ## The story
 
-**Bajigu** is named after **Bajiquan (八极拳)** — the "eight extremes fist," a Chinese martial art famous for closing distance and ending a fight with a single, explosive, decisive strike. No flailing, no dancing around. One move, done.
+I'm a dad. Between work and everything else, my time comes in fragments — and
+short-form video was eating every one of them. Shorts, Reels: I'd look up and
+twenty minutes were gone.
 
-That's the philosophy here. Short-form video — Shorts, Reels — is engineered to keep you flailing: one more swipe, one more loop, an hour gone. Bajigu doesn't negotiate with it. It removes Shorts and Reels from your feeds before they're even painted, and if you do open one, it redirects you straight to the normal video player. One decisive move between you and the doomscroll.
+One evening my two-year-old daughter wanted to play peek-a-boo. She couldn't
+quite say it yet — it came out **"Bajigu."** We played, she laughed, and it hit
+me that those few minutes with her were exactly what the endless scroll had been
+quietly stealing.
 
-Your attention is the most valuable thing you own. Bajigu helps you keep it.
+So I built **Bajigu**. It clears Shorts and Reels out of your feeds before they
+can pull you in, and if you do open one, it sends you straight to the normal
+video player. Not to make you productive — just to hand those minutes back, for
+peek-a-boo, or whatever your version of it is.
+
+Your attention is the most valuable thing you own. Spend it on what matters.
 
 ## What it does
 
@@ -67,6 +77,12 @@ entrypoints/    <- background worker, content scripts, popup, dashboard, new tab
 Sites change their markup constantly — that's the #1 reason a blocker breaks. **The most valuable thing you can do is keep the rules fresh, and you can do it without touching the engine.** See **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 The fastest path: if something stopped being hidden, click **Report Broken Rule** in the extension popup — it opens a pre-filled issue.
+
+## Support
+
+Bajigu is free, open-source, and will never show ads or sell your data. If it
+gave you back some time, you can [sponsor the project](https://github.com/sponsors/youpeihan)
+— it keeps the rules maintained and the lights on. ☕
 
 ## License
 

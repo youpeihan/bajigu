@@ -27,6 +27,10 @@ export default function App() {
             Bajigu hides YouTube Shorts and Facebook Reels, and redirects any Short you
             open to the normal video player.
           </p>
+          <p className="text-zinc-500 text-sm leading-relaxed mt-3 italic">
+            Named by my two-year-old — her best try at "peek-a-boo." Bajigu hands those
+            scrolled-away minutes back, for whatever matters most to you.
+          </p>
         </div>
 
         <ul className="space-y-3 text-zinc-300">
